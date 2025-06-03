@@ -18,25 +18,6 @@ Aplicativo mobile desenvolvido com React Native e Expo, que realiza operações 
 - **Backend:** Node.js, Express, SQLite
 - **Outros:** Axios para comunicação entre app e API
 
-## Estrutura do Projeto
-
-```
-App_em_React_Native_com_expo/
-├── api/
-│   ├── index.js
-│   └── ...
-├── assets/
-├── src/
-│   ├── components/
-│   ├── screens/
-│   ├── navigation/
-│   └── services/
-├── App.tsx
-├── app.json
-├── package.json
-├── tsconfig.json
-└── README.md
-```
 
 ## Como Executar
 
