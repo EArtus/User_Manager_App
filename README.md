@@ -1,22 +1,84 @@
-Trabalho Avaliativo
-Você deverá rodar a API de usuários que está na pasta api para ter um backend online. Ele trabalha com banco de dados SQLite, portanto não precisar criar banco e tabelas, tudo é feito automático.
+```markdown
+# App em React Native com Expo
 
-Para rodar a API, você deverá executar o comando npm i para instalar as dependências e após isso, rode o comando npm start para que a API esteja no ar. Ela irá rodar na porta 3000.
+Aplicativo mobile desenvolvido com React Native e Expo, que realiza operações de CRUD de usuários consumindo uma API backend local feita com Node.js e SQLite.
 
-Com a API rodando, agora você deverá criar um Aplicativo em React Native com Expo e Typescript para realizar o CRUD de usuários.
+## Funcionalidades
 
-Os dados do usuário a serem cadastrado são: name, email, login, password e city.
+- Listar usuários cadastrados com nome e email
+- Adicionar novo usuário com dados: nome, email, login, senha e cidade
+- Editar dados de usuários existentes
+- Excluir usuários
+- Navegação entre telas utilizando Stack Navigation
+- Componentes reutilizáveis para cabeçalho (Header) e rodapé (Footer)
 
-Use stack navigation para criar a navegação no aplicativo.
+## Tecnologias Utilizadas
 
-Crie um componente Header e um componente Footer para sempre aparecer no aplicativo.
+- **Frontend:** React Native, Expo, TypeScript, React Navigation (Stack Navigator)
+- **Backend:** Node.js, Express, SQLite
+- **Outros:** Axios para comunicação entre app e API
 
-Você deverá criar uma tela Home para listar os dados de name e email dentro de cards. Em cada card, também deverá ter um botão para editar e outro para excluir o usuário. Além disso, se a pessoa clicar no card, ela vai ser direcionada para a tela de Details, onde vai mostrar todos os dados do usuário clicado.
+## Estrutura do Projeto
 
-Então as telas no aplicativo serão as seguintes:
+```
+App_em_React_Native_com_expo/
+├── api/
+│   ├── index.js
+│   └── ...
+├── assets/
+├── src/
+│   ├── components/
+│   ├── screens/
+│   ├── navigation/
+│   └── services/
+├── App.tsx
+├── app.json
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-Tela Home para mostrar alguns dados do usuário, com os botões para criar um novo usuário (no Header), editar o usuário específico, excluir um usuário ou ver detalhes deste usuário.
-Tela AddUser para cadastrar um novo usuário.
-Tela EditUser para editar um usuário cadastrado.
-Tela DetailsUser para mostrar todos os dados do usuário.
-Para o campo Cidade, você pode usar um select com a biblioteca: @react-native-picker/picker
+## Como Executar
+
+### Backend (API)
+
+1. Acesse a pasta da API:
+```bash
+cd api
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Inicie o servidor:
+```bash
+npm start
+```
+
+A API estará disponível em: `http://localhost:3000`
+
+### Aplicativo Mobile
+
+1. Volte para a raiz do projeto:
+```bash
+cd ..
+```
+
+2. Instale as dependências do app:
+```bash
+npm install
+```
+
+3. Inicie o servidor do Expo:
+```bash
+npx expo start
+```
+
+4. Utilize o app **Expo Go** no seu celular para escanear o QR code exibido no terminal.
+
+> **Observação:** Certifique-se de que:
+> - Seu dispositivo móvel e computador estejam na mesma rede Wi-Fi
+> - O servidor da API esteja rodando antes de iniciar o app mobile
+```
